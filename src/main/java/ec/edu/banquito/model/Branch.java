@@ -46,16 +46,13 @@ public class Branch {
     @Field("lastModifiedDate")
     private OffsetDateTime lastModifiedDate;
 
-    // 7) constructor vacío sin lombok
     public Branch() {
     }
 
-    // 8) constructor solo PK sin lombok
     public Branch(String id) {
         this.id = id;
     }
 
-    // 11) equals/hashCode solo PK, sin lombok
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -69,7 +66,6 @@ public class Branch {
         return Objects.hash(id);
     }
 
-    // 12) toString con todas las propiedades, sin lombok
     @Override
     public String toString() {
         return "Branch{" +

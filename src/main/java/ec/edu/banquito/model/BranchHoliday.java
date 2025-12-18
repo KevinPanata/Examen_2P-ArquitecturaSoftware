@@ -22,7 +22,6 @@ public class BranchHoliday {
     @Field("id")
     private String id;
 
-    // relación hijo -> padre (BranchHoliday -> Branch)
     @Column(name = "branchId")
     @Field("branchId")
     private String branchId;
